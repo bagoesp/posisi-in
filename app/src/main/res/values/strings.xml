@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Posisiin 0.1</string>
+    <string name="r306">Ruang 306</string>
+    <string name="r307">Ruang 307</string>
+    <string name="r302">Ruang 302</string>
+    <string name="r303">Ruang 303</string>
+    <string name="r304">Ruang 304</string>
+    <string name="r305">Ruang 305</string>
+    <string name="lobi">Lobi</string>
+    <string name="aula">Aula</string>
+    <string name="tlpi">Toilet Putri</string>
+    <string name="tlpa">Toilet Putra</string>
+    <string name="koridor">Koridor</string>
+    <string name="kosong">-</string>
+
+    <string-array name="lokasi_tujuan">
+        <item>Aula</item>
+        <item>Lobi</item>
+        <item>Ruang 302</item>
+        <item>Ruang 303</item>
+        <item>Ruang 304</item>
+        <item>Ruang 305</item>
+        <item>Ruang 306</item>
+        <item>Ruang 307</item>
+        <item>Toilet Putri</item>
+        <item>Toilet Putra</item>
+    </string-array>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KvalueActivity">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/tb_kvalue"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true">
+
+            <TextView
+                android:id="@+id/tv_kvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/btn_back_kvalue"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Atur nilai variabel k"
+                android:textColor="@color/ireng"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn_back_kvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/ireng" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_kvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Variabel k"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:textColor="@color/ireng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ll_kvalue"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_kvalue"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_undraw_choice_re_2hkp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_kvalue"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_kvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56">
+
+        <ImageButton
+            android:id="@+id/btn_up_kvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            app:tint="@color/ireng" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_kvalue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:boxCornerRadiusBottomEnd="40dp"
+            app:boxCornerRadiusBottomStart="40dp"
+            app:boxCornerRadiusTopEnd="40dp"
+            app:boxCornerRadiusTopStart="40dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_kvalue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAlignment="center"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/btn_down_kvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="@color/ireng" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simpan_kvalue"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Simpan perubahan"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="40dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_batal_kvalue"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Batal"
+            android:textAllCaps="false"
+            android:textColor="@color/ireng"
+            android:textSize="16sp"
+            app:cornerRadius="40dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

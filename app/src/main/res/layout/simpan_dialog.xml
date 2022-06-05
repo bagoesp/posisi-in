@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_save"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_cloud_upload_24"
+        app:tint="@color/ireng" />
+
+    <TextView
+        android:id="@+id/tv_title_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/iv_save"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Simpan data sampel ?"
+        android:textColor="@color/ireng"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/tv_title_simpan"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@color/tosca"
+        app:cornerRadius="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_batal_simpan"
+        style="@style/Widget.Material3.Button.TextButton.Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/btn_simpan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Batal"
+        android:textColor="@color/ireng"
+        android:textSize="16sp"
+        app:rippleColor="#DF0101" />
+
+</RelativeLayout>
